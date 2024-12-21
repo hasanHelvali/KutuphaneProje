@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+
+<!DOCTYPE html>
+<html lang="en" style="font-size: 16px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/about.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="account-options">
+            </div>
+        </div>
+        <nav class="navbar">
+            <span class="logo">Book Store</span>
+           @*  <ul>
+                <li><a href="@Url.Action("Index", "Home", new { area = "Customer" })">HOME</a></li>
+                <li><a href="@Url.Action("Index", "About", new { area = "Customer" })">ABOUT US</a></li>
+                <li><a href="@Url.Action("Index", "Contact", new { area = "Customer" })">CONTACT</a></li>
+                <li><a href="@Url.Action("Index", "Books", new { area = "Customer" })">BOOKS</a></li>
+            </ul> *@
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="title">ABOUT US</div>
+        <div class="subtitle">Every book is a journey; we are with you on the path towards knowledge, imagination, and yourself.</div>
+
+        <!-- Book Grid -->
+        <div class="book-grid-container">
+            <div class="book-grid">
+                <img src="~/images/book1.jpg" alt="1984">
+                <img src="~/images/book2.jpg" alt="Silent Mothers">
+                <img src="~/images/book3.jpg" alt="Sapiens">
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div>
+                <h2>Who Are We?</h2>
+                <p>We started with our passion for books, aiming to offer our readers a wide range of book options...</p>
+            </div>
+            <div>
+                <h2>What Do We Do?</h2>
+                <p>We offer a rich selection of content, from popular classics to newly released novels and children's books...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

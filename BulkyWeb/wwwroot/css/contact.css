@@ -1,0 +1,109 @@
+﻿/* html ve body etiketlerine yüksekliği %100 yapalım ve margin/padding sıfırlayalım */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex; /* Flexbox ile hizalama yapıyoruz */
+    justify-content: center; /* Yatayda ortalamak için */
+    align-items: center; /* Dikeyde ortalamak için */
+}
+
+/* body etiketine genişlik ayarlaması ve içeriği ortalamayı ekleyelim */
+body {
+    display: flex; /* Flexbox ile hizalama yapıyoruz */
+    justify-content: center; /* Yatayda ortalamak için */
+    align-items: center; /* Dikeyde ortalamak için */
+}
+
+/* contact-container genişliğini ayarlıyoruz */
+.contact-container {
+    width: 100%;
+    max-width: 600px; /* Maksimum genişlik */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box; /* Border ve padding içeriğe dahil olacak şekilde ayarlandı */
+    border:dotted
+}
+
+    /* Başlık stilini düzenliyoruz */
+    .contact-container h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+/* Tablo düzeni */
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .contact-table th, .contact-table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .contact-table th {
+        background-color: #f0f0f5;
+        color: #333;
+    }
+
+    .contact-table td {
+        color: #555;
+    }
+
+    .contact-table tr:hover {
+        background-color: #f9f9f9;
+    }
+
+    .contact-table a {
+        color: #0073e6;
+        text-decoration: none;
+    }
+
+        .contact-table a:hover {
+            text-decoration: underline;
+        }
+
+/* Sosyal medya simgelerinin renkleri ve düzeni */
+.social-links {
+    margin-top: 20px;
+}
+
+    .social-links a {
+        font-size: 4em;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: color 0.3s, background-color 0.3s;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+.icon-instagram {
+    color: #E1306C;
+}
+
+.icon-whatsapp {
+    color: #25D366;
+}
+
+/* Simge tıklanınca veya üzerine gelince arka plan rengini doldur */
+.icon-instagram:active, .icon-instagram:hover {
+    background-color: #E1306C;
+    color: #fff;
+}
+
+.icon-whatsapp:active, .icon-whatsapp:hover {
+    background-color: #25D366;
+    color: #fff;
+}
+
+.social-links a:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,125 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Üst Menü Stilleri */
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    align-items: right;
+}
+
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+    .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+            .navbar ul li a:hover {
+                text-decoration: underline;
+            }
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+    .search-bar input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+.cart {
+    font-size: 24px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0 30px;
+}
+
+.book-grid-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px; /* Görseller arası boşluk yok */
+    max-width: 40%; /* Görsellerin kapladığı alanı daralttık */
+}
+
+    .book-grid img {
+        width: 100%; /* Tüm sütun genişliğini kaplayacak */
+        height: auto; /* Yüksekliği orantılı olarak ayarlanacak */
+        object-fit: contain; /* Görseller orijinal oranında gösterilecek */
+        border-radius: 0; /* Köşeleri düzleştir */
+    }
+
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding: 20px;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+    .about-section div {
+        max-width: 500px;
+        margin: 10px;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+    }

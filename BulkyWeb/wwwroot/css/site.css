@@ -1,0 +1,40 @@
+/* Kitaplarý içeren satýrý yatayda hizalayalým */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Kartlar arasýnda boþluk */
+    justify-content: space-between; /* Yatayda kartlar arasýnda boþluk */
+}
+
+/* Kitap kartlarýnýn düzgün boyutlarda olmasýný saðlamak için */
+.col-lg-3,
+.col-sm-6 {
+    flex: 0 0 22%; /* Kartlar için geniþlik belirliyoruz, lg ekranlar için %22 */
+    margin-bottom: 20px; /* Alt kýsýmdan boþluk */
+}
+
+/* Kartlarýn boyutlarýnýn düzgün olmasýný saðlamak */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Kartýn yüksekliðini tam yapalým */
+}
+
+/* Kart içeriklerinin hizalanmasýný saðlayalým */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Resim kýsmýnýn boyutlarýný ayarlamak */
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+/* Buton kýsmý */
+.btn {
+    margin-top: 10px;
+}
